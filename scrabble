@@ -1,0 +1,51 @@
+class ScrabbleCalc:
+
+    # Given the below scoring list create a Scrabble word calculator that will provide the correct scores dependent on the string provided.
+    # Letter                             Value
+    # A, E, I, O, U, L, N, R, S, T       1
+    # D, G                               2
+    # B, C, M, P                         3
+    # F, H, V, W, Y                      4
+    # K                                  5
+    # J, X                               8
+    # Q, Z                               10
+
+    def __init__(self):
+        # The initialised lists below are to be used to validate the word score
+        self.one_point_values = ['a', 'e', 'i', 'o', 'u', 'l', 'n', 'r', 's', 't']
+        self.two_point_values = ['d', 'g']
+        self.three_point_values = ['b', 'c', 'm', 'p']
+        self.four_point_values = ['f', 'h', 'v', 'w', 'y']
+        self.five_point_values = ['k']
+        self.eight_point_values = ['j', 'x']
+        self.ten_point_values = ['q', 'z']
+
+
+    # You will need to uncomment the below method and implement the code necessary to validate a word for its scrabble score
+
+    # def word_calc(self, word):
+
+    #convert word to list
+    word=input("enter the word, ")
+    word = list(word.spilt())
+
+    length=len(word)
+
+    for i in word:
+        if letter= 'A' or 'E'or 'I'or 'O'or 'U'or 'L'or 'N'or 'R'or 'S'or 'T':
+            score= 1
+        elif :
+            letter= 'D' or 'G'
+            score= 2
+        elif :
+            letter= 'B' or 'C' or 'M' or 'P' 
+            score= 3
+        end if
+
+    totalScore = totalScore + score
+    print(totalScore)
+    
+
+
+if __name__ == '__main__':
+    print()
